@@ -1,0 +1,138 @@
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  background: #154734;
+  background: -moz-linear-gradient(top, #136d4b 1%, #154734 100%);
+  background: -webkit-linear-gradient(top, #136d4b 1%, #154734 100%);
+  background: linear-gradient(to bottom, #136d4b 1%, #154734 100%);
+}
+
+.topbar .wrapper {
+  display: flex;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  /* If you change this here, also change it in BrandingBarCustomizer */
+  max-width: 1170px;
+}
+
+.topbar .utd-wordmark {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .utd-wordmark a, .topbar .utd-wordmark-only a {
+  color: #fff;
+  font-family: din-2014, sans-serif;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.topbar .utd-wordmark a:hover, .topbar .utd-wordmark-only a:hover {
+  text-decoration: underline;
+}
+
+/* Only the wordmark is visible by default for mobile. */
+.topbar .branding-bar-right {
+  display:none;
+}
+
+.topbar .searchbox {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: -10px;
+  height: 36px;
+}
+
+.topbar .searchbox form {
+  display: flex;
+}
+
+.topbar .searchbox .sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.topbar .searchbox form input {
+  background:#154734;
+  border:none;
+  color:#fff;
+  font-size:15px;
+  height:36px;
+  padding: 2px 8px 5px 8px;
+  width:150px;
+  font-family:din-2014, sans-serif;
+}
+
+.topbar .searchbox button {
+  float: right;
+  background-color: #e87500;
+  width:36px;
+  height:36px;
+  border:8px solid #e87500;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-family:din-2014, sans-serif;
+}
+
+.topbar .branding-bar-right {
+  text-align: right;
+}
+
+.topbar .branding-bar-right ul.link-set {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.topbar .branding-bar-right li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.topbar .branding-bar-right li:last-of-type {
+  margin-right: 0;
+}
+
+.topbar .branding-bar-right a, .topbar .branding-bar-right a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-family: din-2014, sans-serif;
+  font-size: 15px;
+  padding: 0;
+  text-transform: uppercase;
+  word-break: keep-all;
+}
+
+.topbar .branding-bar-right a:hover {
+  text-decoration:underline;
+}
+
+/* Only show links and search box on larger screens */
+@media (min-width: 768px) {
+
+  .topbar .wrapper {
+    justify-content: space-between;
+  }
+
+  .topbar .branding-bar-right {
+    display: flex;
+  }
+
+}
