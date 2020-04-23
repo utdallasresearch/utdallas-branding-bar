@@ -1,0 +1,20 @@
+/* twentyfourteen */
+@media screen and (min-width: 783px) {
+  .masthead-fixed .topbar {
+    position: fixed;
+    top: 0;
+    max-width: 1260px;
+  }
+  .masthead-fixed.admin-bar .topbar {
+    top: 32px;
+  }
+  .masthead-fixed.has-utdallas-branding-bar .site-header {
+    top: 36px;
+  }
+  .masthead-fixed.admin-bar.has-utdallas-branding-bar .site-header {
+    top: 68px;
+  }
+  .masthead-fixed.has-utdallas-branding-bar .site-main {
+    margin-top: 84px;
+  }
+}

@@ -3,14 +3,13 @@
  * The plugin bootstrap file
  *
  * @link              https://github.com/utdallasresearch/utdallas-branding-bar
- * @since             1.0.0
  * @package           UTDallas_Branding_Bar
  *
  * @wordpress-plugin
  * Plugin Name:       UT Dallas Branding Bar
  * Plugin URI:        https://github.com/utdallasresearch/utdallas-branding-bar
  * Description:       Prepend the UT Dallas Branding Bar to a site.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            UT Dallas Research Information Systems
  * Author URI:        https://research.utdallas.edu
  * License:           MIT
@@ -19,7 +18,7 @@
  * Domain Path:       /languages
  */
 
-define('UTDallasBrandingBar\VERSION', '1.0.0');
+define('UTDallasBrandingBar\VERSION', '1.0.1');
 define('UTDallasBrandingBar\PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('UTDallasBrandingBar\PLUGIN_URL', plugin_dir_url(__FILE__));
 
