@@ -14,6 +14,7 @@ class BrandingBarCustomizer
 
     /** @var array checkbox toggles to register */
     public $toggles = [
+        'monogram_wordmark' => 'Monogram Wordmark',
         'apply_link' => 'Apply link',
         'give_link' => 'Give link',
         'galaxy_link' => 'Galaxy link',
@@ -21,6 +22,17 @@ class BrandingBarCustomizer
         'directory_link' => 'Directory link',
         'maps_link' => 'Maps link',
         'search_box' => 'Search UTD box',
+    ];
+
+    public $toggle_defaults = [
+        'monogram_wordmark' => false,
+        'apply_link' => true,
+        'give_link' => true,
+        'galaxy_link' => true,
+        'elearning_link' => true,
+        'directory_link' => true,
+        'maps_link' => true,
+        'search_box' => true,
     ];
 
     /**
@@ -50,7 +62,7 @@ class BrandingBarCustomizer
         foreach ($this->toggles as $toggle_key => $label) {
             $wp_customize->add_setting("utd_branding_bar_{$toggle_key}", [
                 'capability' => 'edit_theme_options',
-                'default' => true,
+                'default' => $this->toggle_defaults[$toggle_key] ?? true,
                 'sanitize_callback' => [$this, 'sanitizeBoolean'],
             ]);
             $wp_customize->add_control("utd_branding_bar_{$toggle_key}_checkbox", [

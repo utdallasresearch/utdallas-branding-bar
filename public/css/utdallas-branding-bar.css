@@ -41,6 +41,8 @@
 .topbar .utd-wordmark-only a:visited,
 .topbar .branding-bar-right a,
 .topbar .branding-bar-right a:visited {
+  display: flex;
+  align-items: center;
   color: #fff;
   font-family: din-2014, sans-serif;
   font-weight: normal;
@@ -59,6 +61,11 @@
 
 .topbar .utd-wordmark a, .topbar .utd-wordmark-only a {
   font-size: 19px;
+}
+
+.topbar .utd-wordmark .utd-monogram-wordmark-svg {
+  width: 300px;
+  height: auto;
 }
 
 /* Only the wordmark is visible by default for mobile. */
