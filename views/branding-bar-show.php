@@ -1,4 +1,4 @@
-<div id="utdallas-branding-bar" class="utdallas-branding-bar topbar">
+<div id="utdallas-branding-bar" class="utdallas-branding-bar topbar <?php echo get_theme_mod('utd_branding_bar_gradient', true) ? 'has-gradient' : '' ?>">
     <div class="wrapper">
 
         <div class="utd-wordmark">

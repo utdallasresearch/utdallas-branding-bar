@@ -23,6 +23,7 @@ class BrandingBarCustomizer
         'maps_link' => 'Maps link',
         'search_box' => 'Search UTD box',
         'site_search_box' => 'Search this site box',
+        'gradient' => 'Background color gradient',
     ];
 
     public $toggle_defaults = [
@@ -35,6 +36,7 @@ class BrandingBarCustomizer
         'maps_link' => true,
         'search_box' => true,
         'site_search_box' => false,
+        'gradient' => true,
     ];
 
     /**
