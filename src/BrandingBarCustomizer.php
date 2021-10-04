@@ -22,6 +22,7 @@ class BrandingBarCustomizer
         'directory_link' => 'Directory link',
         'maps_link' => 'Maps link',
         'search_box' => 'Search UTD box',
+        'site_search_box' => 'Search this site box',
     ];
 
     public $toggle_defaults = [
@@ -33,6 +34,7 @@ class BrandingBarCustomizer
         'directory_link' => true,
         'maps_link' => true,
         'search_box' => true,
+        'site_search_box' => false,
     ];
 
     /**

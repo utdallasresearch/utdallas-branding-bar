@@ -67,9 +67,26 @@
             <?php if (get_theme_mod('utd_branding_bar_search_box', true)) : ?>
                 <div class="searchbox">
                     <form role='search' action="https://www.utdallas.edu/search/">
-                        <label class="sr-only" for="search">Search UT Dallas</label>
+                        <label class="sr-only" for="branding_bar_utd_search">Search UT Dallas</label>
                         <input type="hidden" value="main" name="s">
-                        <input type="text" placeholder="Search UT Dallas" name="q">
+                        <input type="text" id="branding_bar_utd_search" placeholder="Search UT Dallas" name="q">
+                        <button type="submit" class="search-button has-background">
+                            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <defs><style>.cls-1 {fill: #fff;}</style></defs>
+                                <title>magnifying-glass-icon</title>
+                                <path class="cls-1" d="M9.68,10.56a24.25,24.25,0,1,0,34.3,0A24.2,24.2,0,0,0,9.68,10.56Zm29.7,29.7a17.68,17.68,0,1,1,0-25A17.68,17.68,0,0,1,39.38,40.26Z" />
+                                <rect class="cls-1" x="46.8" y="38.46" width="6.6" height="25" transform="translate(-21.36 50.35) rotate(-45)" />
+                            </svg>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </form>
+                </div>
+            <?php endif; ?>
+            <?php if (get_theme_mod('utd_branding_bar_site_search_box', false)) : ?>
+                <div class="searchbox">
+                    <form role='search' action="<?php echo home_url(); ?>">
+                        <label class="sr-only" for="branding_bar_site_search">Search</label>
+                        <input type="text" id="branding_bar_site_search" placeholder="Search" name="s">
                         <button type="submit" class="search-button has-background">
                             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                                 <defs><style>.cls-1 {fill: #fff;}</style></defs>
