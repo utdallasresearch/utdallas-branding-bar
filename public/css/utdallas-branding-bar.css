@@ -167,11 +167,11 @@
 /* Only show links and search box on larger screens */
 @media (min-width: 768px) {
 
-  .topbar .wrapper {
+  .topbar.has-right-side .wrapper {
     justify-content: space-between;
   }
 
-  .topbar .branding-bar-right {
+  .topbar .branding-bar-right:not(.hide) {
     display: flex;
   }
 

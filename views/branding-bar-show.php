@@ -1,4 +1,4 @@
-<div id="utdallas-branding-bar" class="utdallas-branding-bar topbar <?php echo get_theme_mod('utd_branding_bar_gradient', true) ? 'has-gradient' : '' ?>">
+<div id="utdallas-branding-bar" class="utdallas-branding-bar topbar <?php echo get_theme_mod('utd_branding_bar_gradient', true) ? 'has-gradient' : '' ?> <?php echo get_theme_mod('utd_branding_bar_show_links', true) ? 'has-right-side' : 'no-right-side'; ?>">
     <div class="wrapper">
 
         <div class="utd-wordmark">
@@ -43,7 +43,7 @@
             </a>
         </div>
 
-        <div class="branding-bar-right">
+        <div class="branding-bar-right <?php echo get_theme_mod('utd_branding_bar_show_links', true) ? 'show' : 'hide'; ?>">
             <ul class="link-set">
                 <?php if (get_theme_mod('utd_branding_bar_apply_link', true)) : ?>
                     <li><a href="https://www.utdallas.edu/apply">Apply</a></li>

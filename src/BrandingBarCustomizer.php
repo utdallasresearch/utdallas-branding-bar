@@ -15,6 +15,7 @@ class BrandingBarCustomizer
     /** @var array checkbox toggles to register */
     public $toggles = [
         'monogram_wordmark' => 'Monogram Wordmark',
+        'show_links' => 'Show right side link/search container',
         'apply_link' => 'Apply link',
         'give_link' => 'Give link',
         'galaxy_link' => 'Galaxy link',
@@ -28,6 +29,7 @@ class BrandingBarCustomizer
 
     public $toggle_defaults = [
         'monogram_wordmark' => false,
+        'show_links' => true,
         'apply_link' => true,
         'give_link' => true,
         'galaxy_link' => true,
