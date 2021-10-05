@@ -32,6 +32,9 @@ class BrandingBarPlugin
         // Register CSS and JS
         add_action('wp_enqueue_scripts', [$this, 'registerScripts']);
 
+        // Register branding bar menu location
+        add_action('after_setup_theme', [$this, 'registerMenu']);
+
         // Show the branding bar
         add_action('wp_footer', [$this, 'show']);
 
@@ -60,6 +63,11 @@ class BrandingBarPlugin
         }
 
         $this->customizer->registerScripts($main_css_handle);
+    }
+
+    public function registerMenu()
+    {
+        register_nav_menu('utd_branding_bar_menu', 'UTD branding bar custom links');
     }
 
     public function show()

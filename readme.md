@@ -27,7 +27,13 @@ Composer: Add the following to the relevant sections in your `composer.json` fil
 These settings are stored as theme_mods, so they are set on a per-theme basis.
 
 - Checkboxes for showing each of the links (default: show all)
+- Checkboxes for showing the UTD search or site search boxes
+- Styling options
 - Max width of the branding bar: adjust to match the theme (default: 1170px)
+
+## Custom links
+
+To add your own custom links to the branding bar, create a menu and assign it to the branding bar location.
 
 ## Contributing
 

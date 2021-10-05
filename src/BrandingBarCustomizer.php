@@ -60,7 +60,7 @@ class BrandingBarCustomizer
             'theme_supports' => '',
             'capability' => 'edit_theme_options',
             'title' => __('UT Dallas Branding Bar', 'utdallas-branding-bar'),
-            'description' => __('Customize the UT Dallas Top Branding Bar. These settings are stored on a per-theme basis, i.e. you can have different branding bar settings for different site themes.', 'utdallas-branding-bar'),
+            'description' => __('Customize the UT Dallas Top Branding Bar. These settings are stored on a per-theme basis, i.e. you can have different branding bar settings for different site themes. In addition to the standard links below, you can add your own custom links by creating a menu and assigning it to the branding bar location.', 'utdallas-branding-bar'),
         ));
 
         foreach ($this->toggles as $toggle_key => $label) {

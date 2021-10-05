@@ -63,6 +63,11 @@
                 <?php if (get_theme_mod('utd_branding_bar_maps_link', true)) : ?>
                     <li><a href="https://www.utdallas.edu/maps/">Maps</a></li>
                 <?php endif; ?>
+                <?php if (has_nav_menu('utd_branding_bar_menu')) : ?>
+                    <?php foreach(wp_get_nav_menu_items( get_nav_menu_locations()['utd_branding_bar_menu'] ?? 'utd_branding_bar_menu') as $branding_bar_menu_item) : ?>
+                        <li><a href="<?php echo $branding_bar_menu_item->url; ?>"><?php echo $branding_bar_menu_item->title; ?></a></li>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </ul>
             <?php if (get_theme_mod('utd_branding_bar_search_box', true)) : ?>
                 <div class="searchbox">
