@@ -1,0 +1,5 @@
+@media only screen and (max-width: 782px) {
+  .has-utdallas-branding-bar .primary-navigation {
+    top: calc(var(--global--admin-bar--height) + 40px);
+  }
+}

@@ -60,6 +60,8 @@ class BrandingBarPlugin
             wp_enqueue_style($main_css_handle . 'twentyfourteen', $this->asset_url . '/css/theme-specific/twentyfourteen.css', ['twentyfourteen-style'], $this->version);
         } elseif (get_template() === 'twentyfifteen') {
             wp_enqueue_script('utdallas_branding_bar_plugin_twentyfifteen_js', $this->asset_url . '/js/theme-specific/twentyfifteen.js', ['jquery', 'twentyfifteen-script'], $this->version, true);
+        } elseif (get_template() === 'twentytwentyone') {
+            wp_enqueue_style($main_css_handle . 'twentytwentyone', $this->asset_url . '/css/theme-specific/twentytwentyone.css', ['twenty-twenty-one-style'], $this->version);
         }
 
         $this->customizer->registerScripts($main_css_handle);
