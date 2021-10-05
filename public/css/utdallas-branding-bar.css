@@ -7,7 +7,7 @@
   justify-content: center;
   position: relative;
   z-index: 1000;
-  height: 36px;
+  height: 40px;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -80,7 +80,7 @@
   display: inline-block;
   margin-left: 10px;
   margin-right: -10px;
-  height: 36px;
+  height: 40px;
 }
 
 .topbar .searchbox form {
@@ -105,10 +105,11 @@
   border-radius: 0;
   color:#fff;
   font-size:15px;
-  height:36px;
+  height: 40px;
   padding: 2px 8px 5px 8px;
   width:150px;
   font-family:din-2014, sans-serif;
+  margin-right: 0;
 }
 
 .topbar.has-gradient .searchbox form input {
@@ -127,8 +128,8 @@
 .topbar .searchbox button {
   float: right;
   background-color: #e87500;
-  width:36px;
-  height:36px;
+  width: 40px;
+  height: 40px;
   border:8px solid #e87500;
   margin: 0;
   padding: 0;

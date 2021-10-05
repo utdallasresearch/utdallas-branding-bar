@@ -9,12 +9,12 @@
     top: 32px;
   }
   .masthead-fixed.has-utdallas-branding-bar .site-header {
-    top: 36px;
+    top: 40px;
   }
   .masthead-fixed.admin-bar.has-utdallas-branding-bar .site-header {
-    top: 68px;
+    top: 72px;
   }
   .masthead-fixed.has-utdallas-branding-bar .site-main {
-    margin-top: 84px;
+    margin-top: 88px;
   }
 }
