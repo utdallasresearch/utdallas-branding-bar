@@ -49,7 +49,7 @@
                     <li><a href="https://www.utdallas.edu/apply">Apply</a></li>
                 <?php endif; ?>
                 <?php if (get_theme_mod('utd_branding_bar_give_link', true)) : ?>
-                    <li><a href="https://www.utdallas.edu/development/giving-methods/">Give</a></li>
+                    <li><a href="https://development.utdallas.edu/giving-methods/">Give</a></li>
                 <?php endif; ?>
                 <?php if (get_theme_mod('utd_branding_bar_galaxy_link', true)) : ?>
                     <li><a href="https://galaxy.utdallas.edu">Galaxy</a></li>
@@ -61,7 +61,7 @@
                     <li><a href="https://www.utdallas.edu/directory/">Directory</a></li>
                 <?php endif; ?>
                 <?php if (get_theme_mod('utd_branding_bar_maps_link', true)) : ?>
-                    <li><a href="https://www.utdallas.edu/maps/">Maps</a></li>
+                    <li><a href="https://map.utdallas.edu/">Maps</a></li>
                 <?php endif; ?>
                 <?php if (has_nav_menu('utd_branding_bar_menu')) : ?>
                     <?php foreach(wp_get_nav_menu_items( get_nav_menu_locations()['utd_branding_bar_menu'] ?? 'utd_branding_bar_menu') as $branding_bar_menu_item) : ?>
